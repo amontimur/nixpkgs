@@ -15494,6 +15494,8 @@ in
     useMupdf = config.zathura.useMupdf or true;
   };
 
+  zathuraWrapper = callPackage ../applications/misc/zathura/wrapper.nix {};
+
   zed = callPackage ../applications/editors/zed { };
 
   zeroc_ice = callPackage ../development/libraries/zeroc-ice { };
